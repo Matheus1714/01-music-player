@@ -1,4 +1,4 @@
-# [Music Player]() 🚀
+# [Music Player](https://matheus1714.github.io/40-music-player/) 🚀
 
 ![](.github/banner.gif)
 
