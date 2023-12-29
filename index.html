@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <title>Rocketseat | Music Player</title>
+
+        <link rel="shortcut icon" href="img/rocketseat-logo.jpg" type="image/x-icon">
+        
+        <link rel="stylesheet" href="css/index.min.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/music-image.png" >
+            <div class="info">
+                <h1>Acorda Devinho</h1>
+                <p>Banda Rocketseat</p>
+            </div>
+        </header>
+        <main>
+            <div class="audio-controls">
+                <button id="skip-back">
+                    <img src="img/skip-back.svg" alt="">
+                </button>
+                <button id="play">
+                    <img src="img/play.svg" alt="">
+                </button>
+                <button id="skip-ahead">
+                    <img src="img/skip-ahead.svg" alt="">
+                </button>
+            </div>
+            <div class="audio-progress">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time">
+                    <p id="time-progress">00:00</p>
+                    <p id="time-end">00:00</p>
+                </div>
+            </div>
+        </main>
+
+        <audio id="audioPlayer" controls hidden>
+            <source src="audio/music.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+        <script src="index.js"></script>
+    </body>
+</html>
